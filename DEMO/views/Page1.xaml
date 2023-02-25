@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DEMO.views.Page1">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Beige">
+
+            <Entry x:Name="txtNombre1" Placeholder="ingrese su Primer Nombre" Keyboard="Text"/>
+
+            <Entry x:Name="txtNombre2" Placeholder="ingrese su Segundo Nombre" Keyboard="Text"/>
+
+            <Entry x:Name="txtapellido1" Placeholder="ingrese su Primer Apellido" Keyboard="Text"/>
+
+            <Entry x:Name="txtapellido2" Placeholder="ingrese su Segundo Apellido" Keyboard="Text"/>
+
+            <Picker Title="¿Cual es su genero?"
+        TitleColor="Black">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Femenino</x:String>
+                        <x:String>Masculino</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Entry x:Name="txtedad" Placeholder="ingrese su Edad" Keyboard="Numeric" />
+
+            <Entry x:Name="txtaemail" Placeholder="ingrese su Correo Electronico" Keyboard="Email"/>
+
+            <Button x:Name="txtboton1" Text="Enviar Informacion" Clicked="txtboton1_Clicked" Margin="10,60,10,0" BackgroundColor="Brown" TextColor="Yellow"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
